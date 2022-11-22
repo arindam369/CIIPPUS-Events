@@ -1,0 +1,164 @@
+.eventsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.eventBox{
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    width: 630px;
+    padding: 12px 20px 10px 12px;
+    background-color: rgb(241, 241, 241);
+}
+.leftPart .image{
+    border-radius: 4px;
+}
+.rightPart{
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-direction: column;
+    padding: 20px 0px;
+}
+.rightPart h3{
+    margin: 0px;
+}
+.rightPart .title{
+    font-size: 1.1rem;
+    /* margin-top: 10px; */
+    /* margin-bottom: 30px; */
+}
+.rightPart .dateLocation{
+    color: #20407D;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.rightPart .date{
+    font-size: .8rem;
+    margin-bottom: 5px;
+}
+.rightPart .location{
+    font-size: .83rem;
+}
+.buttonBox{
+    /* border: 1px solid red; */
+    
+}
+.button{
+    /* background-color: #EA2330; */
+    background-color: #11b84c;
+    color: white;
+    display: inline-block;
+    padding: 6px 15px;
+    font-size: .9rem;
+    cursor: pointer;
+    border-radius: 3px;
+    float: right;
+    font-weight: 600;
+    font-size: .85rem;
+}
+.button2{
+    background-color: #11b84c;
+    color: white;
+    display: inline-block;
+    padding: 7px 19px;
+    cursor: pointer;
+    border-radius: 3px;
+    float: right;
+    font-weight: 600;
+    font-size: .75rem;
+    border: 0px;
+    margin-left: 59px;
+}
+.button3{
+    /* background-color: #EA2330; */
+    background-color: #11b84c;
+    color: white;
+    display: inline-block;
+    padding: 6px 15px;
+    font-size: .9rem;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: .85rem;
+}
+.showEventBox{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.center{
+    text-align: center;
+}
+.eventDetailsContainer{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eventDetailsBox{
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 12px 12px 10px 12px;
+    background-color: rgb(241, 241, 241);
+    flex-direction: column;
+}
+.eventDetailsBox .rightPart{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 10px;
+}
+.eventDetailsBox .rightPart p{
+    font-size: .8rem;
+    text-align: justify;
+}
+.eventDetailsBox .rightPart .dateLocation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+/* EventForm ---------------------------------------------*/
+.eventFormContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+.eventFormContainer form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #6BCF8E; */
+    background-color: #2580db;
+    color: white;
+    padding: 8px 22px;
+    border-radius: 6px;
+}
+.eventFormContainer form div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 30px;
+}
+.eventFormContainer form div select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 15px;
+    margin-left: 10px;
+    outline: none;
+}
