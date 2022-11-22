@@ -1,6 +1,28 @@
+import { useRef } from "react";
 import styles from "../styles/Home.module.css";
 
 export default function HomePage() {
+  const emailRef = useRef();
+
+  function handleSubmit(e){
+    e.preventDefault();
+    const email = emailRef.current.value;
+    console.log(email);
+
+    fetch("/api/email", {
+      method: "POST",
+      body: JSON.stringify({email: email}),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    }).then((response)=>response.json()).then((response)=>{
+      console.log(response);
+      emailRef.current.value = "";
+    }).catch((err)=>{
+      console.log(err);
+    })
+  }
+
   return (
     <>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -11,9 +33,20 @@ export default function HomePage() {
         ></path>
       </svg>
 
-      <h1 className={styles.center}>
+      <h1 className={styles.logoHeading}>
         Welcome to <span className={styles.head}>CIIPPUS</span>{" "}
       </h1>
+      <div className={styles.newsletterForm}>
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="email-id">
+            Subscribe your email so that you dont miss anything
+          </label>
+          <div>
+            <input type="email" placeholder="Enter your email" id="email-id" ref={emailRef}/>
+            <button>Subscribe</button>
+          </div>
+        </form>
+      </div>
     </>
   );
 }

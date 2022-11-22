@@ -88,6 +88,35 @@
     font-weight: 600;
     font-size: .85rem;
 }
+.postBtn, .cancelBtn{
+    background-color: #3469cd;
+    color: white;
+    display: inline-block;
+    padding: 10px 25px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: .85rem;
+    border: 0px;
+    margin-top: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cancelBtn{
+    background-color: rgb(159, 50, 7);
+}
+.button5{
+    background-color: #11B84C;
+    color: white;
+    display: inline-block;
+    padding: 10px 25px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: .85rem;
+    border: 0px;
+    margin-top: 12px;
+}
 .showEventBox{
     text-align: center;
     margin-bottom: 20px;
@@ -161,4 +190,128 @@
     padding: 3px 15px;
     margin-left: 10px;
     outline: none;
+}
+
+/* Comment Form ----------------------------------------------- */
+.commentFormContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+}
+.commentFormContainer form{
+    /* background-color: #fd9393; */
+    /* background-color: #71b3ff; */
+    background-color: #82d09d;
+    width: 525px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px 30px;
+}
+.commentFormContainer form label{
+    font-size: .9rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: white;
+}
+.halfInputs{
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.halfInput{
+    width: 215px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.halfInput input{
+    padding:6px 20px;
+    border-radius: 3px;
+    border: 0px;
+    font-size: .8rem;
+    outline: none;
+}
+.fullInput{
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.fullInput textarea{
+    padding: 15px 20px;
+    outline: none;
+    resize: none;
+    border-radius: 5px;
+}
+.textarea::-webkit-scrollbar{
+    width: .3em;
+}
+.textarea::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.3);
+}
+.textarea::-webkit-scrollbar-thumb {
+  background-color: rgb(201, 201, 201);
+  border-radius: 8px;
+}
+.textarea::-webkit-scrollbar-track {
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+
+/* comments --------------------------------- */
+.commentsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.commentsBox{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+}
+.commentsBox li{
+    list-style: none;
+}
+.comment{
+    width: 100%;
+    padding: 8px 25px;
+    display: flex;
+}
+.comment .commentDp{
+    margin-top: 2px;
+}
+.comment .commentMessage{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 3px;
+    background-color: rgb(235, 235, 235);
+    padding: 6px 10px 8px 6px;
+    border-radius: 8px;
+}
+.comment .commentMessage .authorName{
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: .85rem;
+}
+.comment .commentMessage .authorMessage{
+    margin-left: 10px;
+    font-size: .82rem;
+    color: rgb(82, 82, 82);
+}
+.error{
+    color: white;
+    font-weight: 700;
+    background-color: rgb(143, 88, 88);
+    padding: 18px 90px;
+    border-radius: 8px;
 }

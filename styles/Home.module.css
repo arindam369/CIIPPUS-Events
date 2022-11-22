@@ -54,3 +54,40 @@
     justify-content: center;
     align-items: center;
 }
+.logoHeading{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: 280px auto;
+    text-align: center;
+}
+.newsletterForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.newsletterForm form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.newsletterForm form label{
+    margin-bottom: 10px;
+}
+.newsletterForm form input{
+    padding: 6px 20px;
+    width: 300px;
+}
+.newsletterForm form button{
+    padding: 8px 18px;
+    margin-left: 4px;
+    background-color: #0077FF;
+    color: white;
+    border: 0px;
+    border-radius: 6px;
+    font-weight: 700;
+}
