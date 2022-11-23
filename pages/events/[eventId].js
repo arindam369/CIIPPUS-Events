@@ -20,16 +20,18 @@ export default function EventDetailsPage(props) {
   }
 
   useEffect(() => {
-    fetch(`/api/comment/${event.id}`)
-      .then((res) => res.json())
-      .then((response) => {
-        // console.log(response);
-        setComments(response.comment);
-      })
-      .catch((err) => {
-        // console.log(err);
-      });
-  }, [event.id]);
+    if (event) {
+      fetch(`/api/comment/${event.id}`)
+        .then((res) => res.json())
+        .then((response) => {
+          // console.log(response);
+          setComments(response.comment);
+        })
+        .catch((err) => {
+          // console.log(err);
+        });
+    }
+  }, []);
 
   if (!event) {
     return (
@@ -125,8 +127,9 @@ export async function getStaticProps(context) {
   const { params } = context;
   const eventID = params.eventId;
   const event = await getEventById(eventID);
+  const notFound = event ? false : true;
 
-  return { props: { event: event } };
+  return { props: { event: event }, notFound };
 }
 export async function getStaticPaths() {
   const eventsArray = await getFeaturedEvents();
