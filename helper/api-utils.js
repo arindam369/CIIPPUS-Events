@@ -1,5 +1,5 @@
 export async function getAllEvents() {
-    return await fetch("https://fir-learning-5628f-default-rtdb.firebaseio.com/events.json").then((response)=>{
+    return await fetch(`${process.env.NEXT_PUBLIC_FIREBASE_URL}`).then((response)=>{
         return response.json();
     }).then((response)=>{
         let eventsArray = [];

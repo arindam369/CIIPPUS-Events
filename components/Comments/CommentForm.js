@@ -21,6 +21,9 @@ export default function CommentForm(props){
 
         if(name.trim()==="" || email.trim()===""|| comment.trim()===""|| !email.includes("@")){
             setError("Invalid Input");
+            setTimeout(() => {
+                setError(null);
+            }, 3000);
             return;
         }
         setError(null);

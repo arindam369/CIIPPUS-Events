@@ -4,8 +4,6 @@ import Image from "next/image";
 
 export default function EventDetails(props){
     const {event} = props;
-    console.log(event);
-
 
     return (
         <>

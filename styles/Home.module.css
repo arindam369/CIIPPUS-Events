@@ -55,13 +55,16 @@
     align-items: center;
 }
 .logoHeading{
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
-    margin: 280px auto;
+    /* position: absolute; */
+    /* left: 0px; */
+    /* right: 0px; */
+    /* top: 0px; */
+    /* bottom: 0px; */
+    /* margin: 280px auto; */
     text-align: center;
+    margin-top: 60px;
+    margin-bottom: 80px;
+
 }
 .newsletterForm{
     display: flex;
@@ -90,4 +93,50 @@
     border: 0px;
     border-radius: 6px;
     font-weight: 700;
+}
+
+.notificationContainer{
+    /* background-color: #DC4C64; */
+    /* background-color: #14A44D; */
+    /* background-color: #3B71CA; */
+    
+    min-height: 65px;
+    /* width: 100%; */
+    width: 300px;
+    position: fixed;
+    top: 55px;
+    right: 30px;
+    border-radius: 6px;
+    color: white;
+    padding: 10px 20px;
+}
+.notificationContainer .notificationTitle{
+    font-weight: 700;
+}
+.notificationContainer .notificationMessage{
+    font-size: .9rem;
+}
+.error{
+    background-color: #DC4C64;
+}
+.success{
+    background-color: #14A44D;
+}
+.pending{
+    background-color: #3B71CA;
+}
+
+@media (max-width: 450px){
+    
+    .newsletterForm form input{
+        padding: 6px 20px;
+        width: 260px;
+    }
+    .newsletterForm form button{
+        padding: 8px 14px;
+    }
+    .newsletterForm form label{
+        font-size: .9rem;
+        font-weight: 600;
+    }
 }

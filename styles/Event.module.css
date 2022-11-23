@@ -247,7 +247,10 @@
     padding: 15px 20px;
     outline: none;
     resize: none;
-    border-radius: 5px;
+    border-radius: 3px;
+    border: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 .textarea::-webkit-scrollbar{
     width: .3em;
@@ -314,4 +317,108 @@
     background-color: rgb(143, 88, 88);
     padding: 18px 90px;
     border-radius: 8px;
+}
+
+@media (max-width: 675px){
+    .eventFormContainer form{
+        padding: 8px 22px;
+        border-radius: 6px;
+        width: 360px;
+    }
+    .eventFormContainer form div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 10px;
+    }
+    .eventFormContainer form div select{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3px 5px;
+        font-size: .7rem;
+        margin-left: 7px;
+        outline: none;
+        width: 50px;
+    }
+    .eventFormContainer form label{
+        font-size: .75rem;
+        font-weight: 700;
+    }
+    .eventFormContainer .button2{
+        padding: 7px 8px;
+        font-size: .65rem;
+        margin-left: 25px;
+
+    }
+
+    .eventBox{
+        margin: 10px 0px;
+        flex-direction: column;
+        border-radius: 8px;
+        width: 350px;
+        padding: 12px 12px 12px 12px;
+        background-color: rgb(241, 241, 241);
+    }
+    .leftPart .image{
+        border-radius: 4px;
+        width: 100%;
+        height: 250px;
+    }
+    .buttonBox{
+        text-align: center;
+        width: 320px;
+    }
+    .button{
+        margin-top: 20px;
+        float: none;
+    }
+    .eventDetailsBox{
+        margin: 10px 20px;
+    }
+}
+@media (max-width: 565px) {
+    .commentFormContainer form{
+        /* background-color: #fd9393; */
+        /* background-color: #71b3ff; */
+        background-color: #82d09d;
+        width: 350px;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 25px 30px;
+    }
+    .commentFormContainer form label{
+        font-size: .9rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+        color: white;
+    }
+    .halfInputs{
+        display: flex;
+        width: 310px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .halfInput{
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .halfInput input{
+        padding:4px 12px;
+    }
+    .fullInput{
+        width: 311px;
+        }
+    .fullInput textarea{
+        padding: 10px 14px;
+        outline: none;
+        resize: none;
+        border-radius: 5px;
+    }
 }
