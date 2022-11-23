@@ -29,7 +29,7 @@ export default function EventDetailsPage(props) {
       .catch((err) => {
         // console.log(err);
       });
-  }, []);
+  }, [event.id]);
 
   if (!event) {
     return (
